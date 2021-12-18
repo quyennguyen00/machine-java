@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="291.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testJava.LoginController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.79998779296875" minWidth="10.0" prefWidth="153.20003662109374" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="393.59996337890624" minWidth="10.0" prefWidth="250.79996337890626" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.800048828125" minWidth="10.0" prefWidth="188.80001220703127" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="137.19998779296876" minHeight="10.0" prefHeight="88.6" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="112.4" minHeight="10.0" prefHeight="50.19998779296874" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="157.19998779296878" minHeight="10.0" prefHeight="51.00001220703126" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="176.40001220703124" minHeight="10.0" prefHeight="46.999999999999986" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="176.40001220703124" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="LOGIN" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label text="Username" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label text="Password" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#loginHandler" text="LOGIN" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtUsername" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pfPass" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="lbError" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
